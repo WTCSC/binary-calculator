@@ -15,7 +15,7 @@ def test_multiplication():
 
 def test_division():
     assert binary_calculator("00000100", "00000010", "/") == "00000010"
-    assert binary_calculator("00000011", "00000111", "/") == "Overflow"
+    assert binary_calculator("00000011", "00000111", "/") == "00000000"
     assert binary_calculator("00000100", "00000000", "/") == "NaN"
 
 def test_invalid_input():
